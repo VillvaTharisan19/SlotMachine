@@ -20,6 +20,9 @@
 		F1E5D8EC2A9AFE1700E211B3 /* background-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1E5D8E42A9AFE1700E211B3 /* background-music.mp3 */; };
 		F1E5D8ED2A9AFE1700E211B3 /* high-score.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F1E5D8E52A9AFE1700E211B3 /* high-score.mp3 */; };
 		F1E5D8F22A9AFE4B00E211B3 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1E5D8F12A9AFE4B00E211B3 /* Launch Screen.storyboard */; };
+		F1E5D8F42A9B015D00E211B3 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D8F32A9B015D00E211B3 /* LogoView.swift */; };
+		F1E5D8F62A9B018800E211B3 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D8F52A9B018800E211B3 /* Modifiers.swift */; };
+		F1E5D8F82A9B03C500E211B3 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D8F72A9B03C500E211B3 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		F1E5D8E42A9AFE1700E211B3 /* background-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "background-music.mp3"; sourceTree = "<group>"; };
 		F1E5D8E52A9AFE1700E211B3 /* high-score.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "high-score.mp3"; sourceTree = "<group>"; };
 		F1E5D8F12A9AFE4B00E211B3 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		F1E5D8F32A9B015D00E211B3 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		F1E5D8F52A9B018800E211B3 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		F1E5D8F72A9B03C500E211B3 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				F1E5D8D12A9AFD4000E211B3 /* ContentView.swift */,
+				F1E5D8F32A9B015D00E211B3 /* LogoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -116,6 +123,8 @@
 		F1E5D8F02A9AFE3200E211B3 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				F1E5D8F52A9B018800E211B3 /* Modifiers.swift */,
+				F1E5D8F72A9B03C500E211B3 /* Extensions.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -199,7 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1E5D8F82A9B03C500E211B3 /* Extensions.swift in Sources */,
+				F1E5D8F62A9B018800E211B3 /* Modifiers.swift in Sources */,
 				F1E5D8D22A9AFD4000E211B3 /* ContentView.swift in Sources */,
+				F1E5D8F42A9B015D00E211B3 /* LogoView.swift in Sources */,
 				F1E5D8D02A9AFD4000E211B3 /* SlotMachineApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
