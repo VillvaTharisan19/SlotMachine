@@ -38,7 +38,7 @@ struct ContentView: View {
                     .modifier(ScoreContainerModifier())
                     
                     Spacer()
-
+                    
                     HStack {
                         Text("200")
                             .scoreNumberStyle()
@@ -94,6 +94,45 @@ struct ContentView: View {
                 .layoutPriority(2)
                 
                 Spacer()
+                
+                
+                HStack(alignment: .center, spacing: 10) {
+                    HStack {
+                        Button(action: {
+                            
+                            
+                        }, label: {
+                            Text("20")
+                                .fontWeight(.heavy)
+                                .foregroundColor(.white)
+                                .modifier(BetNumberModifier())
+                        })
+                        .modifier(BetCapsuleModifier())
+                        
+                        Image("gfx-casino-chips")
+                            .resizable()
+                            .opacity(0)
+                            .modifier(CasinoChipsModifier())
+                    }
+                    
+                    HStack {
+                        Image("gfx-casino-chips")
+                            .resizable()
+                            .opacity(1)
+                            .modifier(CasinoChipsModifier())
+                        
+                        Button(action: {
+                            
+                            
+                        }, label: {
+                            Text("10")
+                                .fontWeight(.heavy)
+                                .foregroundColor(.yellow)
+                                .modifier(BetNumberModifier())
+                        })
+                        .modifier(BetCapsuleModifier())
+                    }
+                }
             }
             .overlay(
                 Button(action: {
