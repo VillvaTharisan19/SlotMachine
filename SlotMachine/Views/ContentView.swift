@@ -21,6 +21,9 @@ struct ContentView: View {
     
     @State private var showingInfoView: Bool = false
     
+    @State private var isActiveBet10: Bool = true
+    @State private var isActiveBet20: Bool = false
+    
     func spinReels() {
         reels = reels.map({ _ in
             Int.random(in: 0...symbols.count - 1)
@@ -49,6 +52,18 @@ struct ContentView: View {
     
     func playerLoses() {
         coins -= betAmount
+    }
+    
+    func activateBet20() {
+        betAmount = 20
+        isActiveBet20 = true
+        isActiveBet10 = false
+    }
+    
+    func activateBet10() {
+        betAmount = 10
+        isActiveBet10 = true
+        isActiveBet20 = false
     }
     
     var body: some View {
@@ -143,35 +158,33 @@ struct ContentView: View {
                 HStack(alignment: .center, spacing: 10) {
                     HStack {
                         Button(action: {
-                            
-                            
+                            self.activateBet20()
                         }, label: {
                             Text("20")
                                 .fontWeight(.heavy)
-                                .foregroundColor(.white)
+                                .foregroundColor(isActiveBet20 ? Color("ColorYellow") : .white)
                                 .modifier(BetNumberModifier())
                         })
                         .modifier(BetCapsuleModifier())
                         
                         Image("gfx-casino-chips")
                             .resizable()
-                            .opacity(0)
+                            .opacity(isActiveBet20 ? 1 : 0)
                             .modifier(CasinoChipsModifier())
                     }
                     
                     HStack {
                         Image("gfx-casino-chips")
                             .resizable()
-                            .opacity(1)
+                            .opacity(isActiveBet10 ? 1 : 0)
                             .modifier(CasinoChipsModifier())
                         
                         Button(action: {
-                            
-                            
+                            self.activateBet10()
                         }, label: {
                             Text("10")
                                 .fontWeight(.heavy)
-                                .foregroundColor(.yellow)
+                                .foregroundColor(isActiveBet10 ? Color("ColorYellow") : .white)
                                 .modifier(BetNumberModifier())
                         })
                         .modifier(BetCapsuleModifier())
