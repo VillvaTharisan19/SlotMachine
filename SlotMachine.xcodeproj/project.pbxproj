@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F123D8EC2AADEAF7005A648E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F123D8EB2AADEAF7005A648E /* InfoView.swift */; };
+		F12F9F252AB5EA9F00E0E8E3 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12F9F242AB5EA9F00E0E8E3 /* PlaySound.swift */; };
 		F144CBF22AA224DB0033BDC8 /* ReelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F144CBF12AA224DB0033BDC8 /* ReelView.swift */; };
 		F1E5D8D02A9AFD4000E211B3 /* SlotMachineApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D8CF2A9AFD4000E211B3 /* SlotMachineApp.swift */; };
 		F1E5D8D22A9AFD4000E211B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E5D8D12A9AFD4000E211B3 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		F123D8EB2AADEAF7005A648E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		F12F9F242AB5EA9F00E0E8E3 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 		F144CBF12AA224DB0033BDC8 /* ReelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelView.swift; sourceTree = "<group>"; };
 		F1E5D8CC2A9AFD4000E211B3 /* SlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1E5D8CF2A9AFD4000E211B3 /* SlotMachineApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotMachineApp.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			children = (
 				F1E5D8F52A9B018800E211B3 /* Modifiers.swift */,
 				F1E5D8F72A9B03C500E211B3 /* Extensions.swift */,
+				F12F9F242AB5EA9F00E0E8E3 /* PlaySound.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F144CBF22AA224DB0033BDC8 /* ReelView.swift in Sources */,
+				F12F9F252AB5EA9F00E0E8E3 /* PlaySound.swift in Sources */,
 				F1E5D8F82A9B03C500E211B3 /* Extensions.swift in Sources */,
 				F1E5D8F62A9B018800E211B3 /* Modifiers.swift in Sources */,
 				F1E5D8D22A9AFD4000E211B3 /* ContentView.swift in Sources */,
